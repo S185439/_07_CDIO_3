@@ -1,12 +1,14 @@
 import java.util.Scanner;
 
-public class Kort2 extends Kort{
+public class Kort4 extends Kort{
     private String kortTekst;
     Scanner input = new Scanner(System.in);
     @Override
     protected void kortFunktion(Spiller spiller) {
         System.out.println(kortTekst);
-        int felterFrem = input.nextInt();
-        Spiller.rykSpiller(felterFrem);
+        int valg = input.nextInt();
+        if (valg == 1) {
+            spiller.rykFelter(1);
+        }
     }
 }

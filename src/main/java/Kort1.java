@@ -1,8 +1,10 @@
-public class Kort1 {
+public class Kort1 extends  Kort {
     private String kortTekst;
 
-    private void kortFunktion(Spiller spiller) {
+    @Override
+    protected void kortFunktion(Spiller spiller) {
         System.out.println(kortTekst);
         spiller.setPlacering(0);
+
     }
 }
