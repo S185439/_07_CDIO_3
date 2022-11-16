@@ -21,13 +21,13 @@ public class Start extends Felt{
     }
     @Override
     public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
-        //spiller.spillerKonto.transaktion(2);
+        spiller.spillerKonto.transaktion(2);
         gui.showMessage(this.feltBesked);
     }
 
     @Override
     public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
-        //spiller.spillerKonto.transaktion(2);
+        spiller.spillerKonto.transaktion(2);
         gui.showMessage(this.feltBesked);
     }
 

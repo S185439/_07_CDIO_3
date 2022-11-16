@@ -21,12 +21,12 @@ public class GaaIFaengsel extends Felt{
     }
     @Override
     public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
-        /*if (spiller.getUdAfFaengselKort <= 0) {
+        if (spiller.getUdAfFaengselKort <= 0) {
             spiller.setIFaengsel(True);
         } else {
             spiller.brugUdAfFaengselKort();
         }
-        gui.showMessage(this.feltBesked);*/
+        gui.showMessage(this.feltBesked);
     }
 
     @Override

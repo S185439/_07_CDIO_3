@@ -24,8 +24,8 @@ public class ChanceFelt extends Felt{
 
     @Override
     public <Spiller, KortBunke> void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
-        //Kort kort = kortbunke.traekKort();
-        //kort.kortFunktion(spiller);
+        Kort kort = kortbunke.traekKort();
+        kort.kortFunktion(spiller);
         gui.showMessage(this.feltBesked);
     }
 
