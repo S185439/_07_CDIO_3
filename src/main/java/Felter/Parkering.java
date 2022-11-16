@@ -5,12 +5,13 @@ import gui_fields.GUI_Field;
 import gui_main.GUI;
 
 import java.awt.*;
+import java.io.IOException;
 
 public class Parkering extends Felt{
 
     GUI_Empty parkeringFelt;
 
-    Parkering() {
+    Parkering() throws IOException {
         super.titel = textController.getTekst("ParkeringTitel");
         super.underTekst = textController.getTekst("ParkeringUndertekst");
         super.beskrivelse = textController.getTekst("ParkeringBeskrivelse");;

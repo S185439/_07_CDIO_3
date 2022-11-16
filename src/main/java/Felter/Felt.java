@@ -4,6 +4,7 @@ import gui_fields.GUI_Field;
 import gui_main.GUI;
 
 import java.awt.*;
+import java.io.IOException;
 
 public abstract class Felt {
     String titel;
@@ -14,8 +15,8 @@ public abstract class Felt {
     String feltBesked;
 
     TextController textController = new TextController();
-    public abstract <Spiller> void landPaaFelt(Spiller spiller, GUI gui);
-    public abstract <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui);
+    public abstract <Spiller> void landPaaFelt(Spiller spiller, GUI gui) throws IOException;
+    public abstract <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) throws IOException;
     public abstract GUI_Field getFelt();
 
     public String getTitel() {

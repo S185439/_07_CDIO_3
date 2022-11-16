@@ -5,6 +5,7 @@ import gui_fields.GUI_Street;
 import gui_main.GUI;
 
 import java.awt.*;
+import java.io.IOException;
 
 public class Ejendom extends Felt{
 
@@ -17,10 +18,10 @@ public class Ejendom extends Felt{
     String huslejeString;
     String ejer;
 
-    Ejendom(int koebsVaerdi, String navn, Color farve) {
+    Ejendom(int koebsVaerdi, String navn, Color farve) throws IOException {
         super.titel = navn;
         super.underTekst = textController.getTekst("EjendomUndertekst");
-        super.beskrivelse = textController.getTekst("EjendomBeskrivelse");;
+        super.beskrivelse = textController.getTekst("EjendomBeskrivelse");
         super.bgFarve = farve;
         super.fgFarve = Color.BLACK;
         this.farve = farve;
@@ -39,7 +40,7 @@ public class Ejendom extends Felt{
         spiller.transaktion(-koebsVaerdiInt);
     }
     @Override
-    public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
+    public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) throws IOException {
         if (this.koebsTilstand && this.ejer.equals(spiller.getNavn())) {
             gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerFelt"));
         } else if (this.koebsTilstand && !this.ejer.equals(spiller.getNavn())) {
@@ -52,7 +53,7 @@ public class Ejendom extends Felt{
     }
 
     @Override
-    public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
+    public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) throws IOException {
         if (this.koebsTilstand && this.ejer.equals(spiller.getNavn())) {
             gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerFelt"));
         } else if (this.koebsTilstand && !this.ejer.equals(spiller.getNavn())) {
