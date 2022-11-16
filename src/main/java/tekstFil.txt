@@ -1,52 +1,52 @@
-"ChanceTitel"
-"Chance"
-"ChanceUndertekst"
-"Chance Felt"
-"ChanceBeskrivelse"
-"Når du lander på dette felt trækker du et chancekort"
-"ChanceFeltBesked"
-"Du er landet på chancefeltet, du trækker et chancekort"
-"FaengselBillede"
-"Fængsel"
-"FaengselTitel"
-"Fængsel"
-"FaengselUndertekst"
-"Fængsel Felt"
-"FaengselBeskrivelse"
-"Hvis du er landet på gå i fængsel felter rykker du til fængslet og skal betale 1M for at komme ud, ellers er du på besøg og der sker derfor ikke noget"
-"FaengselFeltBesked"
-"Du er landet på fængslet, du er på besøg og der sker derfor ikke noget"
-"StartTitel"
-"Start"
-"StartUndertekst"
-"Start Felt"
-"StartBeskrivelse"
-"Når du passere start modtager du 2M"
-"StartFeltBesked"
-"Du har passeret start, du modtager 2M"
-"GaaIFaengselTitel"
-"Gå i Fængsel"
-"GaaIFaengselUndertekst"
-"Gå i Fængsel Felt"
-"GaaIFaengselBeskrivelse"
-"Når du lander på dette felt rykker du i fængsel og skal betale 1M for at komme ud"
-"GaaIFaengselFeltBesked"
-"Du er landet på gå i fængsel feltet, derfor rykker du til fængsel feltet og skal betale 1M næste runde for at komme ud"
-"ParkeringTitel"
-"Parkering"
-"ParkeringUndertekst"
-"Parkerings felt"
-"ParkeringBeskrivelse"
-"Hvis du lander på dette felt parkerer du indtil næste tur"
-"ParkeringBesked"
-"Du er landet på Parkering, du parkerer bilen og venter til næste runde"
-"EjendomUnderTekst"
-"Ejendoms Felt"
-"EjendomBeskrivelse"
-"Dette er et ejendoms felt, hvis du lander på dette felt og feltet ikke har nogen ejer køber du det automatisk, hvis feltet er ejet af en anden spiller når du lander på det, skal du betale husleje. Huslejen ved enkelt ejet felt er købsværdien på feltet, ved begge ejet felter er det dobbelt købsværdi"
-"EjendomTekstLandetSpillerEjerFelt"
-"Du ejer denne ejendom, du venter til næste tur"
-"EjendomTekstLandetSpillerEjerIkkeFelt"
-"Du ejer ikke denne ejendom og skal derfor betale husleje"
-"EjendomTekstIkkeEjetFelt"
-"Der er ikke nogen som ejer denne ejendom og du køber derfor ejendommen"
+ChanceTitel
+Chance
+ChanceUndertekst
+Chance Felt
+ChanceBeskrivelse
+Når du lander på dette felt trækker du et chancekort
+ChanceFeltBesked
+Du er landet på chancefeltet, du trækker et chancekort
+FaengselBillede
+Fængsel
+FaengselTitel
+Fængsel
+FaengselUndertekst
+Fængsel Felt
+FaengselBeskrivelse
+Hvis du er landet på gå i fængsel felter rykker du til fængslet og skal betale 1M for at komme ud, ellers er du på besøg og der sker derfor ikke noget
+FaengselFeltBesked
+Du er landet på fængslet, du er på besøg og der sker derfor ikke noget
+StartTitel
+Start
+StartUndertekst
+Start Felt
+StartBeskrivelse
+Når du passere start modtager du 2M
+StartFeltBesked
+Du har passeret start, du modtager 2M
+GaaIFaengselTitel
+Gå i Fængsel
+GaaIFaengselUndertekst
+Gå i Fængsel Felt
+GaaIFaengselBeskrivelse
+Når du lander på dette felt rykker du i fængsel og skal betale 1M for at komme ud
+GaaIFaengselFeltBesked
+Du er landet på gå i fængsel feltet, derfor rykker du til fængsel feltet og skal betale 1M næste runde for at komme ud
+ParkeringTitel
+Parkering
+ParkeringUndertekst
+Parkerings felt
+ParkeringBeskrivelse
+Hvis du lander på dette felt parkerer du indtil næste tur
+ParkeringBesked
+Du er landet på Parkering, du parkerer bilen og venter til næste runde
+EjendomUnderTekst
+Ejendoms Felt
+EjendomBeskrivelse
+Dette er et ejendoms felt, hvis du lander på dette felt og feltet ikke har nogen ejer køber du det automatisk, hvis feltet er ejet af en anden spiller når du lander på det, skal du betale husleje. Huslejen ved enkelt ejet felt er købsværdien på feltet, ved begge ejet felter er det dobbelt købsværdi
+EjendomTekstLandetSpillerEjerFelt
+Du ejer denne ejendom, du venter til næste tur
+EjendomTekstLandetSpillerEjerIkkeFelt
+Du ejer ikke denne ejendom og skal derfor betale husleje
+EjendomTekstIkkeEjetFelt
+Der er ikke nogen som ejer denne ejendom og du køber derfor ejendommen

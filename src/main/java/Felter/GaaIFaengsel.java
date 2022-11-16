@@ -5,11 +5,12 @@ import gui_fields.GUI_Field;
 import gui_main.GUI;
 
 import java.awt.*;
+import java.io.IOException;
 
 public class GaaIFaengsel extends Felt{
 
     GUI_Empty gaaIFaengselFelt;
-    GaaIFaengsel() {
+    GaaIFaengsel() throws IOException {
         super.titel = textController.getTekst("GaaIFaengselTitel");
         super.underTekst = textController.getTekst("GaaIFaengselUndertekst");
         super.beskrivelse = textController.getTekst("GaaIFaengselBeskrivelse");;
@@ -20,18 +21,18 @@ public class GaaIFaengsel extends Felt{
     }
     @Override
     public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
-        if (spiller.getUdAfFaengselKort <= 0) {
+        /*if (spiller.getUdAfFaengselKort <= 0) {
             spiller.setIFaengsel(True);
         } else {
             spiller.brugUdAfFaengselKort();
         }
-        gui.showMessage(this.feltBesked);
+        gui.showMessage(this.feltBesked);*/
     }
 
     @Override
     public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
         if (spiller.getUdAfFaengselKort <= 0) {
-            spiller.setIFaengsel(True);
+            spiller.setIFaengsel(true);
         } else {
             spiller.brugUdAfFaengselKort();
         }

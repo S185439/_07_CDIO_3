@@ -5,12 +5,13 @@ import gui_fields.GUI_Jail;
 import gui_main.GUI;
 
 import java.awt.*;
+import java.io.IOException;
 
 public class Faengsel extends Felt{
 
     GUI_Jail faengselFelt;
 
-    Faengsel() {
+    Faengsel() throws IOException {
         String billede = textController.getTekst("FaengselBillede");
         super.titel = textController.getTekst("FaengselTitel");
         super.underTekst = textController.getTekst("FaengselUndertekst");
