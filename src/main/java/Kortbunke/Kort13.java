@@ -1,15 +1,14 @@
 package Kortbunke;
-import tekstCo
-import gui_main.GUI;
 
+import gui_main.GUI;
 
 import java.io.IOException;
 
-public class Kort1 extends Kort{
+public class Kort13 extends Kort{
     String kortTekst;
 
-    public Kort1() throws IOException {
-        super.kortTekst = textController.getTekst("KortTekst1");
+    public Kort13() throws IOException {
+        super.kortTekst = textController.getTekst("KortTekst13");
     }
 
 
@@ -19,8 +18,7 @@ public class Kort1 extends Kort{
         GUI gui = new GUI;
         gui = gui1;
         gui.displayChanceCard(kortTekst);
-        //Sæt spiller med bil-brik til en hvis tilstand der gør at de på næste tur rykker frem til et ejendomsfelt
+        //Sæt spiller med Hunde-brik til en hvis tilstand der gør at de på næste tur rykker frem til et ejendomsfelt
         //af deres valg. Derudover skal der trækkes et kort mere
-
     };
 }
