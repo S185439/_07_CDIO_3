@@ -43,7 +43,7 @@ public class ChanceFelt extends Felt{
     public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
         gui.showMessage(this.feltBesked);
         Kort kort = kortbunke.traekKort();
-        kort.kortFunktion(spiller);
+        kort.kortFunktion(spiller, gui);
     }
 
     /**
