@@ -8,22 +8,22 @@ import java.io.IOException;
 public class SpillePlade {
      TextController textController = new TextController();
      Faengsel faengsel = new Faengsel();
-     Ejendom burgerbaren = new Ejendom(1, textController.getTekst("BurgerBaren"), Color.MAGENTA);
-     Ejendom pizzeriaet = new Ejendom(1,textController.getTekst("Pizzeriaet"), Color.MAGENTA);
-     Ejendom slikbutikken = new Ejendom(1,textController.getTekst("slikbutikken"), Color.cyan);
-     Ejendom iskiosken = new Ejendom(1,textController.getTekst("iskiosken"), Color.cyan);
-     Ejendom museet = new Ejendom(2,textController.getTekst("Museet"), Color.pink);
-     Ejendom biblioteket = new Ejendom(2,textController.getTekst("Biblioteket"), Color.pink);
-     Ejendom skateparken = new Ejendom(2,textController.getTekst("Skateparken"), Color.orange);
-     Ejendom swimmingpoolen = new Ejendom(2,textController.getTekst("Swimminpoolen"), Color.orange);
-     Ejendom spillehallen = new Ejendom(3,textController.getTekst("Spillehallen"), Color.red);
-     Ejendom biografen = new Ejendom(3,textController.getTekst("Biografen"), Color.red);
-     Ejendom legetoejsbutikken = new Ejendom(3,textController.getTekst("Legetøjsbutikken"), Color.yellow);
-     Ejendom dyrehandlen = new Ejendom(3,textController.getTekst("Dyrehandlen"), Color.yellow);
-     Ejendom bowlinghallen = new Ejendom(4,textController.getTekst("Bowlinghallen"), Color.green);
-     Ejendom zoo = new Ejendom(4,textController.getTekst("ZOO"), Color.green);
-     Ejendom vandlandet = new Ejendom(4,textController.getTekst("Vandlandet"), Color.blue);
-     Ejendom strandpromenaden = new Ejendom(4,textController.getTekst("Strandpromenaden"), Color.blue);
+     Ejendom burgerbaren = new Ejendom(1, textController.getTekst("BurgerBarenFeltNavn"), Color.MAGENTA);
+     Ejendom pizzeriaet = new Ejendom(1,textController.getTekst("PizzeriaetFeltNavn"), Color.MAGENTA);
+     Ejendom slikbutikken = new Ejendom(1,textController.getTekst("slikbutikkenFeltNavn"), Color.cyan);
+     Ejendom iskiosken = new Ejendom(1,textController.getTekst("iskioskenFeltNavn"), Color.cyan);
+     Ejendom museet = new Ejendom(2,textController.getTekst("MuseetFeltNavn"), Color.pink);
+     Ejendom biblioteket = new Ejendom(2,textController.getTekst("BiblioteketFeltNavn"), Color.pink);
+     Ejendom skateparken = new Ejendom(2,textController.getTekst("SkateparkenFeltNavn"), Color.orange);
+     Ejendom swimmingpoolen = new Ejendom(2,textController.getTekst("SwimminpoolenFeltNavn"), Color.orange);
+     Ejendom spillehallen = new Ejendom(3,textController.getTekst("SpillehallenFeltNavn"), Color.red);
+     Ejendom biografen = new Ejendom(3,textController.getTekst("BiografenFeltNavn"), Color.red);
+     Ejendom legetoejsbutikken = new Ejendom(3,textController.getTekst("LegetøjsbutikkenFeltNavn"), Color.yellow);
+     Ejendom dyrehandlen = new Ejendom(3,textController.getTekst("DyrehandlenFeltNavn"), Color.yellow);
+     Ejendom bowlinghallen = new Ejendom(4,textController.getTekst("BowlinghallenFeltNavn"), Color.green);
+     Ejendom zoo = new Ejendom(4,textController.getTekst("ZOOFeltNavn"), Color.green);
+     Ejendom vandlandet = new Ejendom(4,textController.getTekst("VandlandetFeltNavn"), Color.blue);
+     Ejendom strandpromenaden = new Ejendom(4,textController.getTekst("StrandpromenadenFeltNavn"), Color.blue);
      GaaIFaengsel gaaIFaengsel = new GaaIFaengsel();
      Parkering parkering = new Parkering();
      ChanceFelt chanceFelt = new ChanceFelt();
@@ -65,5 +65,6 @@ public class SpillePlade {
      public GUI_Field getFeltPlacering (int placering) {
         return felter [placering - 1];
      }
+     public GUI_Field[] getFelter() {return felter;}
 }
 
