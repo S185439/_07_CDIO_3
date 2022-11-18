@@ -9,9 +9,9 @@ import java.io.IOException;
 public class Spil {
     public static void main(String[] args) throws IOException {
 
-        GUI_Field[] fields = new GUI_Field[] {new GUI_Start(), new GUI_Street()};
+        SpillePlade spillePlade = new SpillePlade();
 
-        GUI gui = new GUI(fields);
+        GUI gui = new GUI(spillePlade.getFelter());
     }
 
 }
