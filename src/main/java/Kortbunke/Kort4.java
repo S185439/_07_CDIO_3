@@ -22,9 +22,9 @@ public class Kort4 extends Kort {
         gui.displayChanceCard(kortTekst);
         String valg = gui.getUserSelection(kortTekst1, kortTekst2,kortTekst3);
         if (valg.equals(kortTekst2)) {
-            spiller.setPlacering(13);
+            spiller.setPlacering(10);
         } else {
-            spiller.setPlacering(14);
+            spiller.setPlacering(11);
         };
     };
 }

@@ -87,9 +87,9 @@ Ryk frem til et grønt eller et orange felt. Hvis det ikke er eget får du det g
 KortTekst8.1
 Hvilket felt vil du rykke frem til?
 KortTekst8.2
-Spillehallen
+Skaterparken
 KortTekst8.3
-Biografen
+Svømmehallen
 KortTekst8.4
 Bowlinghallen
 KortTekst8.5
@@ -135,11 +135,32 @@ Ryk frem til et rødt felt. Hvis det ikke er eget får du det gratis, ellers ska
 KortTekst17.1
 Hvilket felt vil du rykke til?
 KortTekst17.2
-
+Spillehallen
 KortTekst17.3
-
+Biografen
 KortTekst18
-
+Ryk frem til skaterparken. Hvis ingen ejer den, får du den gratis. Ellers skal du betale husleje.
 KortTekst19
-
+Vælg et lyseblåt eller et rødt felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst19.1
+Hvilket felt vil du rykke frem til?
+KortTekst19.2
+Slikbutikken
+KortTekst19.3
+Iskiosken
+KortTekst19.4
+Spillehallen
+KortTekst19.5
+Biografen
 KortTekst20
+Vælg et brunt eller et gult felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst20.1
+Hvilket felt vil du rykke frem til?
+KortTekst20.2
+Burgerbaren
+KortTekst20.3
+Pizzahuset
+KortTekst20.4
+Legetøjsbutikken
+KortTekst20.5
+Dyrebutikken

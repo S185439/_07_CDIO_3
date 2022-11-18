@@ -24,9 +24,9 @@ public class Kort8 extends Kort {
         gui.displayChanceCard(kortTekst);
         String valg = gui.getUserSelection(kortTekst1, kortTekst2, kortTekst3, kortTekst4, kortTekst5);
         if (valg.equals(kortTekst2)) {
-            spiller.setPlacering(13);
+            spiller.setPlacering(10);
         } else if (valg.equals(kortTekst3)) {
-            spiller.setPlacering(14);
+            spiller.setPlacering(11);
         } else if (valg.equals(kortTekst4)) {
             spiller.setPlacering(19);
         } else {
