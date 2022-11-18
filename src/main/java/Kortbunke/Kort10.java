@@ -13,11 +13,7 @@ public class Kort10 extends Kort{
     }
 
 
-    protected void kortFunktion(Spiller spiller1, GUI gui1) {
-        Spiller spiller = new Spiller;
-        spiller = spiller1;
-        GUI gui = new GUI;
-        gui = gui1;
+    public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
         spiller.faaUdAfFaengselKort();
     };

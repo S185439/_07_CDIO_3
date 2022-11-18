@@ -13,12 +13,8 @@ public class Kort16 extends Kort {
     }
 
     //rykker spilleren til start
-    protected void kortFunktion(Spiller spiller1, GUI gui1) {
-        Spiller spiller = new Spiller;
-        spiller = spiller1;
-        GUI gui = new GUI;
-        gui = gui1;
+    public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
-        spiller.Konto.transaktion(2);
+        spiller.spillerKonto.transaktion(2);
     };
 }

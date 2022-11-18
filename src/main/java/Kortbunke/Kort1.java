@@ -1,6 +1,6 @@
 package Kortbunke;
 import Spiller.Spiller;
-import tekstCo
+
 import gui_main.GUI;
 
 
@@ -14,11 +14,7 @@ public class Kort1 extends Kort{
     }
 
 
-    protected void kortFunktion(Spiller spiller1, GUI gui1) {
-        Spiller spiller = new Spiller;
-        spiller = spiller1;
-        GUI gui = new GUI;
-        gui = gui1;
+    public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
         //Sæt spiller med bil-brik til en hvis tilstand der gør at de på næste tur rykker frem til et ejendomsfelt
         //af deres valg. Derudover skal der trækkes et kort mere

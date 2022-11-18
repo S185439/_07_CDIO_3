@@ -3,7 +3,7 @@ package Spiller;
 public class Spiller {
     //Kode taget fra CDIO2
     public String navn;
-    public Konto Spillerkonto;
+    public Konto spillerKonto;
     public boolean iFaengsel;
     public int udAfFaengselKort;
     public int placering;
@@ -15,7 +15,7 @@ public class Spiller {
     public Spiller (String navn, int penge) {
         this.navn = navn;
         startPenge = penge;
-        Spillerkonto = new Konto(startPenge);
+        spillerKonto = new Konto(startPenge);
         this.iFaengsel = false;
         this.placering = 0;
         this.udAfFaengselKort = 0;
@@ -25,12 +25,9 @@ public class Spiller {
         this.udAfFaengselKort += 1;
     }
 
-    public boolean brugFaengselKort() {
+    public void brugUdAfFaengselKort() {
         if (this.udAfFaengselKort >= 0) {
             this.udAfFaengselKort -= 1;
-            return true;
-        } else {
-            return false;
         }
     }
 
@@ -44,7 +41,7 @@ public class Spiller {
     }
 
     public void overStart() {
-        this.Spillerkonto.transaktion(2);
+        this.spillerKonto.transaktion(2);
     }
 
     // Getter og Setter for spillerens navn
