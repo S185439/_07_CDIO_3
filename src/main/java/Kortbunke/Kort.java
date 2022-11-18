@@ -7,7 +7,7 @@ public abstract class Kort {
     String kortTekst, kortTekst1, kortTekst2, kortTekst3, kortTekst4, kortTekst5;
 
     TextController textController = new TextController();
-    protected void kortFunktion(Spiller spiller1, GUI gui) {
+    public void kortFunktion(Spiller spiller1, GUI gui) {
 
     }
 

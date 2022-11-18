@@ -13,11 +13,7 @@ public class Kort3 extends Kort {
         super.kortTekst1 = textController.getTekst("KortTekst3.1");
     }
     @Override
-    protected void kortFunktion(Spiller spiller1, GUI gui1) {
-        Spiller spiller = new Spiller;
-        spiller = spiller1;
-        GUI gui = new GUI;
-        gui = gui1;
+    public void kortFunktion(Spiller spiller, GUI gui) {
         String antalFelter = gui.getUserSelection(kortTekst1, "1","2","3","4","5");
         spiller.rykSpiller(Integer.parseInt(antalFelter));
     };

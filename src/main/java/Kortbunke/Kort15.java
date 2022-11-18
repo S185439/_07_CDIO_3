@@ -17,11 +17,7 @@ public class Kort15 extends Kort {
         super.kortTekst5 = textController.getTekst("KortTekst15.5");
     }
     @Override
-    protected void kortFunktion(Spiller spiller1, GUI gui1) {
-        Spiller spiller = new Spiller;
-        spiller = spiller1;
-        GUI gui = new GUI;
-        gui = gui1;
+    public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
         String valg = gui.getUserSelection(kortTekst1, kortTekst2, kortTekst3, kortTekst4, kortTekst5);
         if (valg.equals(kortTekst2)) {
