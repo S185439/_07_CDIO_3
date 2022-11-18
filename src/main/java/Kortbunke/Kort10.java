@@ -1,5 +1,6 @@
 package Kortbunke;
 
+import Spiller.Spiller;
 import gui_main.GUI;
 
 import java.io.IOException;
@@ -18,6 +19,6 @@ public class Kort10 extends Kort{
         GUI gui = new GUI;
         gui = gui1;
         gui.displayChanceCard(kortTekst);
-        spiller.FaaUdAfFaengselKort();
+        spiller.faaUdAfFaengselKort();
     };
 }
