@@ -1,5 +1,6 @@
 package Kortbunke;
 
+import Spiller.Spiller;
 import gui_main.GUI;
 
 import java.io.IOException;
