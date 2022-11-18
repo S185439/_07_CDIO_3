@@ -1,5 +1,7 @@
 package Felter;
 
+import Kortbunke.KortBunke;
+import Spiller.Spiller;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Start;
 import gui_main.GUI;
@@ -20,13 +22,13 @@ public class Start extends Felt{
         startFelt = new GUI_Start(super.titel, super.underTekst, super.beskrivelse, super.bgFarve, super.fgFarve);
     }
     @Override
-    public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
+    public void landPaaFelt(Spiller spiller, GUI gui) {
         spiller.spillerKonto.transaktion(2);
         gui.showMessage(this.feltBesked);
     }
 
     @Override
-    public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
+    public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
         spiller.spillerKonto.transaktion(2);
         gui.showMessage(this.feltBesked);
     }

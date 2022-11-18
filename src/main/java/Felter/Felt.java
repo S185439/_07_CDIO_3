@@ -1,4 +1,6 @@
 package Felter;
+import Spiller.Spiller;
+import Kortbunke.*;
 import TextController.TextController;
 import gui_fields.GUI_Field;
 import gui_main.GUI;
@@ -17,7 +19,7 @@ public abstract class Felt {
     String feltBesked;
 
     TextController textController = new TextController();
-    public abstract <Spiller> void landPaaFelt(Spiller spiller, GUI gui) throws IOException;
+    public abstract void landPaaFelt(Spiller spiller, GUI gui) throws IOException;
 
     /**
      *
@@ -26,7 +28,7 @@ public abstract class Felt {
      * @param gui, det er et gui object, og skal være det gui object som bliver brugt til at oprette spillet,
      *             da metoden showMessage bliver brugt i forbindelse med den
      */
-    public abstract <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) throws IOException;
+    public abstract void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) throws IOException;
     public abstract GUI_Field getFelt();
 
     public String getTitel() {

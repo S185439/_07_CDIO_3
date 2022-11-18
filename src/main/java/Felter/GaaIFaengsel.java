@@ -1,5 +1,7 @@
 package Felter;
 
+import Kortbunke.KortBunke;
+import Spiller.Spiller;
 import gui_fields.GUI_Empty;
 import gui_fields.GUI_Field;
 import gui_main.GUI;
@@ -27,12 +29,9 @@ public class GaaIFaengsel extends Felt{
      *             da metoden showMessage i guien bliver brugt i forbindelse med den
      */
     @Override
-    public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
-        if (spiller.getUdAfFaengselKort <= 0) {
-            spiller.setIFaengsel(True);
-        } else {
-            spiller.brugUdAfFaengselKort();
-        }
+    public void landPaaFelt(Spiller spiller, GUI gui) {
+        spiller.setPlacering(6);
+        spiller.brugUdAfFaengselKort();
         gui.showMessage(this.feltBesked);
     }
 
@@ -44,12 +43,9 @@ public class GaaIFaengsel extends Felt{
      *             da metoden showMessage i guien bliver brugt i forbindelse med de
      */
     @Override
-    public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
-        if (spiller.getUdAfFaengselKort <= 0) {
-            spiller.setIFaengsel(true);
-        } else {
-            spiller.brugUdAfFaengselKort();
-        }
+    public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
+        spiller.setPlacering(6);
+        spiller.brugUdAfFaengselKort();
         gui.showMessage(this.feltBesked);
     }
 

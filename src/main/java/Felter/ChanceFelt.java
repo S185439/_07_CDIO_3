@@ -1,5 +1,7 @@
 package Felter;
-
+import Kortbunke.Kort;
+import Kortbunke.KortBunke;
+import Spiller.Spiller;
 import gui_fields.GUI_Chance;
 import gui_fields.GUI_Field;
 import gui_main.GUI;
@@ -26,7 +28,7 @@ public class ChanceFelt extends Felt{
      *             da metoden showMessage i guien bliver brugt i forbindelse med den
      */
     @Override
-    public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
+    public void landPaaFelt(Spiller spiller, GUI gui) {
     }
 
     /**
@@ -38,7 +40,7 @@ public class ChanceFelt extends Felt{
      *             da metoden showMessage i guien bliver brugt i forbindelse med de
      */
     @Override
-    public <Spiller, KortBunke> void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
+    public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
         gui.showMessage(this.feltBesked);
         Kort kort = kortbunke.traekKort();
         kort.kortFunktion(spiller);

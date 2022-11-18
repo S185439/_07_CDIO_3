@@ -1,5 +1,7 @@
 package Felter;
 
+import Kortbunke.KortBunke;
+import Spiller.Spiller;
 import gui_fields.GUI_Empty;
 import gui_fields.GUI_Field;
 import gui_main.GUI;
@@ -27,12 +29,12 @@ public class Parkering extends Felt{
      *             da metoden showMessage i guien bliver brugt i forbindelse med den
      */
     @Override
-    public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
+    public void landPaaFelt(Spiller spiller, GUI gui) {
         gui.showMessage(this.feltBesked);
     }
 
     @Override
-    public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
+    public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) {
 
     }
 
