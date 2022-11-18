@@ -11,7 +11,7 @@ public class Parkering extends Felt{
 
     GUI_Empty parkeringFelt;
 
-    Parkering() throws IOException {
+    public Parkering() throws IOException {
         super.titel = textController.getTekst("ParkeringTitel");
         super.underTekst = textController.getTekst("ParkeringUndertekst");
         super.beskrivelse = textController.getTekst("ParkeringBeskrivelse");;

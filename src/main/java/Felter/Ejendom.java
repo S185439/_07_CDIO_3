@@ -18,7 +18,7 @@ public class Ejendom extends Felt{
     String huslejeString;
     String ejer;
 
-    Ejendom(int koebsVaerdi, String navn, Color farve) throws IOException {
+    public Ejendom(int koebsVaerdi, String navn, Color farve) throws IOException {
         super.titel = navn;
         super.underTekst = textController.getTekst("EjendomUndertekst");
         super.beskrivelse = textController.getTekst("EjendomBeskrivelse");

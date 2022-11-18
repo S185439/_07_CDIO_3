@@ -10,7 +10,7 @@ import java.io.IOException;
 public class GaaIFaengsel extends Felt{
 
     GUI_Empty gaaIFaengselFelt;
-    GaaIFaengsel() throws IOException {
+    public GaaIFaengsel() throws IOException {
         super.titel = textController.getTekst("GaaIFaengselTitel");
         super.underTekst = textController.getTekst("GaaIFaengselUndertekst");
         super.beskrivelse = textController.getTekst("GaaIFaengselBeskrivelse");;

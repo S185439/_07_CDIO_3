@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class ChanceFelt extends Felt{
     GUI_Chance chanceFelt;
-    ChanceFelt() throws IOException {
+    public ChanceFelt() throws IOException {
         super.titel = textController.getTekst("ChanceTitel");
         super.underTekst = textController.getTekst("ChanceUndertekst");
         super.beskrivelse = textController.getTekst("ChanceBeskrivelse");;

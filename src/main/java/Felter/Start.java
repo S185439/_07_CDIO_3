@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Start extends Felt{
 
     GUI_Start startFelt;
-    Start() throws IOException {
+    public Start() throws IOException {
         super.titel = textController.getTekst("StartTitel");
         super.underTekst = textController.getTekst("StartUndertekst");
         super.beskrivelse = textController.getTekst("StartBeskrivelse");;

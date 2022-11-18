@@ -11,7 +11,7 @@ public class Faengsel extends Felt{
 
     GUI_Jail faengselFelt;
 
-    Faengsel() throws IOException {
+    public Faengsel() throws IOException {
         String billede = textController.getTekst("FaengselBillede");
         super.titel = textController.getTekst("FaengselTitel");
         super.underTekst = textController.getTekst("FaengselUndertekst");
