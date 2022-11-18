@@ -50,3 +50,117 @@ EjendomTekstLandetSpillerEjerIkkeFelt
 Du ejer ikke denne ejendom og skal derfor betale husleje
 EjendomTekstIkkeEjetFelt
 Der er ikke nogen som ejer denne ejendom og du køber derfor ejendommen
+KortTekst1
+Giv dette kort til spiller 1 og tag et chancekort mere
+KortTekst1.1
+Du kan nu rykke til hvilken som helst ejendom og købe den
+KortTekst2
+Ryk frem til start og få 2 M
+KortTekst3
+Ryk op til 5 felter frem
+KortTekst3.1
+Hvor mange felter vil du rykke frem?
+KortTekst4
+Ryk frem til et orange felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst4.1
+Hvilket orange felt vil du rykke frem til?
+KortTekst4.2
+Skaterparken
+KortTekst4.3
+Svømmehallen
+KortTekst5
+Ryk 1 felt frem eller træk et chancekort mere
+KortTekst5.1
+Hvad vil du helst?
+KortTekst5.2
+Rykke 1 felt frem
+KortTekst5.3
+Trække et chancekort mere
+KortTekst6
+Giv dette kort til spiller 2 og tag et chancekort mere
+KortTekst6.1
+Du kan nu rykke til hvilken som helst ejendom og købe den
+KortTekst7
+Du har spist for meget slik, betal 2 M til banken
+KortTekst8
+Ryk frem til et grønt eller et orange felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst8.1
+Hvilket felt vil du rykke frem til?
+KortTekst8.2
+Skaterparken
+KortTekst8.3
+Svømmehallen
+KortTekst8.4
+Bowlinghallen
+KortTekst8.5
+Zoologisk Have
+KortTekst9
+Ryk frem til et lyseblåt felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst9.1
+Hvilket felt vil du rykke til?
+KortTekst9.2
+Slikbutikken
+KortTekst9.3
+Iskiosken
+KortTekst10
+Kom ud af fængslet gratis. Behold dette kort til næste gang du kommer i fængsel
+KortTekst11
+Ryk Frem til Strandpromenaden
+KortTekst12
+Giv dette kort til spiller 3 og tag et chancekort mere
+KortTekst12.1
+Du kan nu rykke til hvilken som helst ejendom og købe den
+KortTekst13
+Giv dette kort til spiller 4 og tag et chancekort mere
+KortTekst13.1
+Du kan nu rykke til hvilken som helst ejendom og købe den
+KortTekst14
+Det er din fødselsdag og du modtager 1 M fra de andre spillere
+KortTekst15
+Vælg et pink eller et mørkeblåt felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst15.1
+Hvilket felt vil du rykke frem til?
+KortTekst15.2
+Museet
+KortTekst15.3
+Biblioteket
+KortTekst15.4
+Vandlandet
+KortTekst15.5
+Strandpromenaden
+KortTekst16
+Du har lavet alle dine lektier! modtag 2 M fr banken
+KortTekst17
+Ryk frem til et rødt felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst17.1
+Hvilket felt vil du rykke til?
+KortTekst17.2
+Spillehallen
+KortTekst17.3
+Biografen
+KortTekst18
+Ryk frem til skaterparken. Hvis ingen ejer den, får du den gratis. Ellers skal du betale husleje.
+KortTekst19
+Vælg et lyseblåt eller et rødt felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst19.1
+Hvilket felt vil du rykke frem til?
+KortTekst19.2
+Slikbutikken
+KortTekst19.3
+Iskiosken
+KortTekst19.4
+Spillehallen
+KortTekst19.5
+Biografen
+KortTekst20
+Vælg et brunt eller et gult felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+KortTekst20.1
+Hvilket felt vil du rykke frem til?
+KortTekst20.2
+Burgerbaren
+KortTekst20.3
+Pizzahuset
+KortTekst20.4
+Legetøjsbutikken
+KortTekst20.5
+Dyrebutikken

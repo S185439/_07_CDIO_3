@@ -19,6 +19,13 @@ public class GaaIFaengsel extends Felt{
         super.feltBesked = textController.getTekst("GaaIFaengselFeltBesked");
         gaaIFaengselFelt = new GUI_Empty(super.bgFarve, super.fgFarve, super.titel, super.underTekst, super.beskrivelse);
     }
+
+    /**
+     * denne funktion ændre spiller tilstandet til at den er fængsel kun og kun hvis de ikke har et ud af fængselkort
+     * @param spiller, det er et spiller object oprettet med Spiller.java
+     * @param gui, det er et gui object, og skal være det gui object som bliver brugt til at oprette spillet,
+     *             da metoden showMessage i guien bliver brugt i forbindelse med den
+     */
     @Override
     public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
         if (spiller.getUdAfFaengselKort <= 0) {
@@ -29,6 +36,13 @@ public class GaaIFaengsel extends Felt{
         gui.showMessage(this.feltBesked);
     }
 
+    /**
+     *  denne funktion ændre spiller tilstandet til at den er fængsel kun og kun hvis de ikke har et ud af fængselkort
+     * @param spiller, det er et spiller object oprettet med Spiller.java
+     * @param kortbunke, det er et kortbunke object oprette med Kortbunke.java
+     * @param gui, det er et gui object, og skal være det gui object som bliver brugt til at oprette spillet,
+     *             da metoden showMessage i guien bliver brugt i forbindelse med de
+     */
     @Override
     public <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) {
         if (spiller.getUdAfFaengselKort <= 0) {
@@ -39,6 +53,10 @@ public class GaaIFaengsel extends Felt{
         gui.showMessage(this.feltBesked);
     }
 
+    /**
+     *
+     * @return et GUI_Empty objekt med de rette indtastninger
+     */
     @Override
     public GUI_Field getFelt() {
         return gaaIFaengselFelt;

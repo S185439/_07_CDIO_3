@@ -20,6 +20,12 @@ public class Parkering extends Felt{
         super.feltBesked = textController.getTekst("ParkeringBesked");
         parkeringFelt = new GUI_Empty( super.bgFarve, super.fgFarve, super.titel, super.underTekst, super.beskrivelse);
     }
+    /**
+     * denne funktion gør ikke andet end at sende en besked til brugeren, da det er et parkeringsfelt
+     * @param spiller, det er et spiller object oprettet med Spiller.java
+     * @param gui, det er et gui object, og skal være det gui object som bliver brugt til at oprette spillet,
+     *             da metoden showMessage i guien bliver brugt i forbindelse med den
+     */
     @Override
     public <Spiller> void landPaaFelt(Spiller spiller, GUI gui) {
         gui.showMessage(this.feltBesked);
@@ -30,6 +36,10 @@ public class Parkering extends Felt{
 
     }
 
+    /**
+     *
+     * @return et GUI_Empty objekt med de rette indtastninger
+     */
     @Override
     public GUI_Field getFelt() {
         return parkeringFelt;

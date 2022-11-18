@@ -7,6 +7,8 @@ import java.awt.*;
 import java.io.IOException;
 
 public abstract class Felt {
+
+    // Dette er abstract felt til alle felterne på boardet
     String titel;
     String underTekst;
     String beskrivelse;
@@ -16,6 +18,14 @@ public abstract class Felt {
 
     TextController textController = new TextController();
     public abstract <Spiller> void landPaaFelt(Spiller spiller, GUI gui) throws IOException;
+
+    /**
+     *
+     * @param spiller, det er et spiller object oprettet med Spiller.java
+     * @param kortbunke, det er et kortbunke object oprette med Kortbunke.java
+     * @param gui, det er et gui object, og skal være det gui object som bliver brugt til at oprette spillet,
+     *             da metoden showMessage bliver brugt i forbindelse med den
+     */
     public abstract <Spiller, Kortbunke> void landPaaFelt(Spiller spiller, Kortbunke kortbunke, GUI gui) throws IOException;
     public abstract GUI_Field getFelt();
 
