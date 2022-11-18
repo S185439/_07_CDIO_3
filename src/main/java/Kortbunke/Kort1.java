@@ -1,4 +1,5 @@
 package Kortbunke;
+import Spiller.Spiller;
 import tekstCo
 import gui_main.GUI;
 
