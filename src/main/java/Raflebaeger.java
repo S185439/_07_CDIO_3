@@ -15,7 +15,7 @@ public class Raflebaeger {
      * @return Den nye sumAfTerninger efter terninger er slaaet
      */
     public int slaaAlleTerninger() {
-        terning.slaaAlleTerninger();
+        terning.slaaTerning();
         this.sumAfTerninger = terning.getOejenVaerdi();
         return sumAfTerninger;
     }

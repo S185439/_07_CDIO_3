@@ -2,8 +2,9 @@ package Felter;
 
 import Kortbunke.KortBunke;
 import Spiller.Spiller;
-import gui_fields.GUI_Empty;
 import gui_fields.GUI_Field;
+import Felter.GUI_Empty;
+import gui_fields.GUI_Jail;
 import gui_main.GUI;
 
 import java.awt.*;
@@ -11,7 +12,7 @@ import java.io.IOException;
 
 public class GaaIFaengsel extends Felt{
 
-    GUI_Empty gaaIFaengselFelt;
+    GUI_Jail gaaIFaengselFelt;
     public GaaIFaengsel() throws IOException {
         super.titel = textController.getTekst("GaaIFaengselTitel");
         super.underTekst = textController.getTekst("GaaIFaengselUndertekst");
@@ -19,7 +20,7 @@ public class GaaIFaengsel extends Felt{
         super.bgFarve = Color.LIGHT_GRAY;
         super.fgFarve = Color.BLACK;
         super.feltBesked = textController.getTekst("GaaIFaengselFeltBesked");
-        gaaIFaengselFelt = new GUI_Empty(super.bgFarve, super.fgFarve, super.titel, super.underTekst, super.beskrivelse);
+        gaaIFaengselFelt = new GUI_Jail("",super.titel, super.underTekst, super.beskrivelse, super.bgFarve, super.fgFarve);
     }
 
     /**

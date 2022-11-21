@@ -22,7 +22,6 @@ public class Ejendom extends Felt{
 
     public Ejendom(int koebsVaerdi, String navn, Color farve) throws IOException {
         super.titel = navn;
-        super.underTekst = textController.getTekst("EjendomUndertekst");
         super.beskrivelse = textController.getTekst("EjendomBeskrivelse");
         super.bgFarve = farve;
         super.fgFarve = Color.BLACK;
@@ -33,19 +32,36 @@ public class Ejendom extends Felt{
         this.ejer = "";
         this.huslejeInt = koebsVaerdi;
         this.huslejeString = Integer.toString(koebsVaerdi);
-        ejendomsFelt = new GUI_Street(super.titel, super.underTekst, super.beskrivelse, this.koebsVaerdiString, super.bgFarve, super.fgFarve);
+        super.underTekst = textController.getTekst("EjendomUnderTekst")+ ": " + this.koebsVaerdiString;
+        ejendomsFelt = new GUI_Street(this.titel, super.underTekst, super.beskrivelse, this.koebsVaerdiString, super.bgFarve, super.fgFarve);
+    }
+
+    public Ejendom(int koebsVaerdi, String navn, Color bgfarve, Color fgfarve) throws IOException {
+        super.titel = navn;
+        super.beskrivelse = textController.getTekst("EjendomBeskrivelse");
+        super.bgFarve = bgfarve;
+        super.fgFarve = fgfarve;
+        this.farve = bgfarve;
+        this.koebsTilstand = false;
+        this.koebsVaerdiInt = koebsVaerdi;
+        this.koebsVaerdiString = Integer.toString(koebsVaerdi);
+        this.ejer = "";
+        this.huslejeInt = koebsVaerdi;
+        this.huslejeString = Integer.toString(koebsVaerdi);
+        super.underTekst = textController.getTekst("EjendomUnderTekst")+ ": " + this.koebsVaerdiString;
+        ejendomsFelt = new GUI_Street(this.titel, super.underTekst, super.beskrivelse, this.koebsVaerdiString, super.bgFarve, super.fgFarve);
     }
 
     private void koebEjendom(Spiller spiller) {
         this.koebsTilstand = true;
-        this.ejer = spiller.getNavn;
+        this.ejer = spiller.getSpillerNavn();
         spiller.spillerKonto.transaktion(-koebsVaerdiInt);
     }
     @Override
     public void landPaaFelt(Spiller spiller, GUI gui) throws IOException {
-        if (this.koebsTilstand && this.ejer.equals(spiller.getNavn())) {
+        if (this.koebsTilstand && this.ejer.equals(spiller.getSpillerNavn())) {
             gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerFelt"));
-        } else if (this.koebsTilstand && !this.ejer.equals(spiller.getNavn())) {
+        } else if (this.koebsTilstand && !this.ejer.equals(spiller.getSpillerNavn())) {
             gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerIkkeFelt"));
             spiller.spillerKonto.transaktion(-huslejeInt);
         } else {
@@ -56,11 +72,11 @@ public class Ejendom extends Felt{
 
     @Override
     public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) throws IOException {
-        if (this.koebsTilstand && this.ejer.equals(spiller.getNavn())) {
+        if (this.koebsTilstand && this.ejer.equals(spiller.getSpillerNavn())) {
             gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerFelt"));
-        } else if (this.koebsTilstand && !this.ejer.equals(spiller.getNavn())) {
+        } else if (this.koebsTilstand && !this.ejer.equals(spiller.getSpillerNavn())) {
             gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerIkkeFelt"));
-            spiller.transaktion(-huslejeInt);
+            spiller.spillerKonto.transaktion(-huslejeInt);
         } else {
             gui.showMessage(textController.getTekst("EjendomTekstIkkeEjetFelt"));
             koebEjendom(spiller);

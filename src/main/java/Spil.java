@@ -10,8 +10,8 @@ public class Spil {
     public static void main(String[] args) throws IOException {
 
         SpillePlade spillePlade = new SpillePlade();
-
-        GUI gui = new GUI(spillePlade.getFelter());
+        GUI_Field[] felter = spillePlade.getFelter();
+        GUI gui = new GUI(felter);
     }
 
 }

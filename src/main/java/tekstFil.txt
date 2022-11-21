@@ -1,5 +1,5 @@
 ChanceTitel
-Chance
+?
 ChanceUndertekst
 Chance Felt
 ChanceBeskrivelse
@@ -27,7 +27,7 @@ Du har passeret start, du modtager 2M
 GaaIFaengselTitel
 Gå i Fængsel
 GaaIFaengselUndertekst
-Gå i Fængsel Felt
+Gå i Fængsel
 GaaIFaengselBeskrivelse
 Når du lander på dette felt rykker du i fængsel og skal betale 1M for at komme ud
 GaaIFaengselFeltBesked
@@ -35,15 +35,15 @@ Du er landet på gå i fængsel feltet, derfor rykker du til fængsel feltet og 
 ParkeringTitel
 Parkering
 ParkeringUndertekst
-Parkerings felt
+Parkering
 ParkeringBeskrivelse
 Hvis du lander på dette felt parkerer du indtil næste tur
 ParkeringBesked
 Du er landet på Parkering, du parkerer bilen og venter til næste runde
 EjendomUnderTekst
-Ejendoms Felt
+Pris
 EjendomBeskrivelse
-Dette er et ejendoms felt, hvis du lander på dette felt og feltet ikke har nogen ejer køber du det automatisk, hvis feltet er ejet af en anden spiller når du lander på det, skal du betale husleje. Huslejen ved enkelt ejet felt er købsværdien på feltet, ved begge ejet felter er det dobbelt købsværdi
+Dette er et ejendoms felt, hvis du lander på dette felt og feltet ikke har nogen ejer køber du det automatisk, hvis feltet er ejet af en anden spiller, skal du betale husleje. Huslejen ved enkelt ejet felt er købsværdien på feltet, ved begge ejet felter er det dobbelt købsværdi
 EjendomTekstLandetSpillerEjerFelt
 Du ejer denne ejendom, du venter til næste tur
 EjendomTekstLandetSpillerEjerIkkeFelt
@@ -173,26 +173,26 @@ Slikbutikken
 iskioskenFeltNavn
 Iskiosken
 MuseetFeltNavn
-Musset
+Muséet
 BiblioteketFeltNavn
 Biblioteket
 SkateparkenFeltNavn
 Skateparken
 SwimminpoolenFeltNavn
-Swimminpoolen
+Swimming\npoolen
 SpillehallenFeltNavn
 Spillehallen
 BiografenFeltNavn
 Biografen
 LegetøjsbutikkenFeltNavn
-Legetøjsbutikken
+Legetøjs\nbutikken
 DyrehandlenFeltNavn
 Dyrehandlen
 BowlinghallenFeltNavn
-Bowlinghallen
+Bowling\nhallen
 ZOOFeltNavn
 ZOO
 VandlandetFeltNavn
 Vandlandet
 StrandpromenadenFeltNavn
-Strandpromenaden
+Strand\npromenaden

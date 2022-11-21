@@ -2,8 +2,9 @@ package Felter;
 
 import Kortbunke.KortBunke;
 import Spiller.Spiller;
-import gui_fields.GUI_Empty;
+import Felter.GUI_Empty;
 import gui_fields.GUI_Field;
+import gui_fields.GUI_Refuge;
 import gui_main.GUI;
 
 import java.awt.*;
@@ -11,7 +12,7 @@ import java.io.IOException;
 
 public class Parkering extends Felt{
 
-    GUI_Empty parkeringFelt;
+    GUI_Refuge parkeringFelt;
 
     public Parkering() throws IOException {
         super.titel = textController.getTekst("ParkeringTitel");
@@ -20,7 +21,7 @@ public class Parkering extends Felt{
         super.bgFarve = Color.GRAY;
         super.fgFarve = Color.WHITE;
         super.feltBesked = textController.getTekst("ParkeringBesked");
-        parkeringFelt = new GUI_Empty( super.bgFarve, super.fgFarve, super.titel, super.underTekst, super.beskrivelse);
+        parkeringFelt = new GUI_Refuge("",this.titel, this.underTekst, this.beskrivelse, this.bgFarve, this.fgFarve);
     }
     /**
      * denne funktion gør ikke andet end at sende en besked til brugeren, da det er et parkeringsfelt
