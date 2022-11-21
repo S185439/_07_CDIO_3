@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Kort3 extends Kort {
     String kortTekst, kortTekst1;
 
-    public Kort3(String kortTekst1) throws IOException {
+    public Kort3() throws IOException {
         super.kortTekst = textController.getTekst("KortTekst3");
         super.kortTekst1 = textController.getTekst("KortTekst3.1");
     }
