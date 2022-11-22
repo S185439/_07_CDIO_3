@@ -1,4 +1,10 @@
+import TextController.TextController;
+import gui_main.GUI;
+
+import java.io.IOException;
+
 public class Raflebaeger {
+    TextController textController = new TextController();
     private Terning terning;
     private int sumAfTerninger;
 
@@ -14,9 +20,11 @@ public class Raflebaeger {
      * Bruger slaaTerning på terningen, og saetter sumAfTerninge til terningens oejenVaerdi
      * @return Den nye sumAfTerninger efter terninger er slaaet
      */
-    public int slaaAlleTerninger() {
+    public int slaaAlleTerninger(GUI gui) throws IOException {
         terning.slaaTerning();
         this.sumAfTerninger = terning.getOejenVaerdi();
+        gui.showMessage(textController.getTekst("slaaTerning"));
+        gui.setDie(sumAfTerninger);
         return sumAfTerninger;
     }
 

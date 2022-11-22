@@ -36,7 +36,7 @@ public class SpillePlade {
 
      public SpillePlade() throws IOException {
           felter[0] = start.getFelt();
-         felter[1] = burgerbaren.getFelt();
+          felter[1] = burgerbaren.getFelt();
           felter[2] = pizzeriaet.getFelt();
           felter[3] = chanceFelt1.getFelt();
           felter[4] = slikbutikken.getFelt();
@@ -69,5 +69,8 @@ public class SpillePlade {
         return felter [placering - 1];
      }
      public GUI_Field[] getFelter() {return felter;}
+     public void setSpillerPaaFelt(GUI_Player spiller, int placering) {
+          felter[placering].setCar(spiller, true);
+     }
 }
 

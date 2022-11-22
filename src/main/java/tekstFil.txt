@@ -196,3 +196,15 @@ VandlandetFeltNavn
 Vandlandet
 StrandpromenadenFeltNavn
 Strand\npromenaden
+slaaTerning
+Tryk ok for at slå terningen og ryk din brik
+spillernavn1
+Indtast spiller 1's navn, spiller 1 er rød
+spillernavn2
+Indtast spiller 2's navn, spiller 2 er blå
+spillernavn3
+Indtast spiller 3's navn, spiller 3 er grøn
+spillernavn4
+Indtast spiller 4's navn, spiller 4 er lilla
+startspilspillerindtast
+Hvor mange spillere er i? I skal være mellem 2 og 4 spillere
