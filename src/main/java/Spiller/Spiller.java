@@ -15,6 +15,7 @@ public class Spiller {
     public int startPenge;
     private GUI_Car bil;
     private GUI_Player GUIspiller;
+    public boolean harTypeKort;
 
 
 
@@ -24,6 +25,7 @@ public class Spiller {
         startPenge = penge;
         spillerKonto = new Konto(startPenge);
         this.iFaengsel = false;
+        this.harTypeKort = false;
         this.placering = 0;
         this.udAfFaengselKort = 0;
         this.bil = new GUI_Car(farve, Color.BLACK, GUI_Car.Type.CAR, GUI_Car.Pattern.FILL);
@@ -37,6 +39,14 @@ public class Spiller {
     public void brugUdAfFaengselKort() {
         if (this.udAfFaengselKort >= 0) {
             this.udAfFaengselKort -= 1;
+        }
+    }
+
+    public void faaTypeKort() { this.harTypeKort = true; }
+
+    public void brugTypeKort() {
+        if (this.harTypeKort) {
+            harTypeKort = false;
         }
     }
 

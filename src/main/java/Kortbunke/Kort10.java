@@ -12,7 +12,7 @@ public class Kort10 extends Kort{
         super.kortTekst = textController.getTekst("KortTekst10");
     }
 
-
+    @Override
     public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
         spiller.faaUdAfFaengselKort();

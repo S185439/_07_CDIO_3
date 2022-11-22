@@ -16,5 +16,9 @@ public class Kort14 extends Kort{
     public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
         //loop der giver personen penge og tager det fra andre.
+
     };
+
+
+
 }

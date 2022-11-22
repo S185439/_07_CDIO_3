@@ -11,7 +11,7 @@ public class Kort7 extends Kort {
     public Kort7() throws IOException {
         super.kortTekst = textController.getTekst("KortTekst7");
     }
-
+    @Override
     //rykker spilleren til start
     public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
