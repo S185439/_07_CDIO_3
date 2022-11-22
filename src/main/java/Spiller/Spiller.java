@@ -8,6 +8,7 @@ public class Spiller {
     public int udAfFaengselKort;
     public int placering;
     public int startPenge;
+    public boolean harTypeKort;
 
 
 
@@ -17,6 +18,7 @@ public class Spiller {
         startPenge = penge;
         spillerKonto = new Konto(startPenge);
         this.iFaengsel = false;
+        this.harTypeKort = false;
         this.placering = 0;
         this.udAfFaengselKort = 0;
     }
@@ -28,6 +30,14 @@ public class Spiller {
     public void brugUdAfFaengselKort() {
         if (this.udAfFaengselKort >= 0) {
             this.udAfFaengselKort -= 1;
+        }
+    }
+
+    public void faaTypeKort() { this.harTypeKort = true; }
+
+    public void brugTypeKort() {
+        if (this.harTypeKort) {
+            harTypeKort = false;
         }
     }
 
