@@ -1,6 +1,7 @@
 package Felter;
 
 import Kortbunke.KortBunke;
+import SpillePlade.SpillePlade;
 import Spiller.Spiller;
 import Felter.GUI_Empty;
 import gui_fields.GUI_Field;
@@ -39,6 +40,11 @@ public class Parkering extends Felt{
 
     }
 
+    @Override
+    public void landPaaFelt(Spiller spiller, GUI gui, Spiller[] spillerArray, SpillePlade spillePlade) throws IOException {
+
+    }
+
     /**
      *
      * @return et GUI_Empty objekt med de rette indtastninger
@@ -46,5 +52,10 @@ public class Parkering extends Felt{
     @Override
     public GUI_Field getFelt() {
         return parkeringFelt;
+    }
+
+    @Override
+    public String getFeltType() {
+        return "ParkeringsFelt";
     }
 }

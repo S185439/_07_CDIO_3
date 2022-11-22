@@ -5,6 +5,7 @@ import Spiller.Spiller;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Street;
 import gui_main.GUI;
+import SpillePlade.SpillePlade;
 
 import java.awt.*;
 import java.io.IOException;
@@ -69,6 +70,23 @@ public class Ejendom extends Felt{
             koebEjendom(spiller);
         }
     }
+    public void landPaaFelt(Spiller spiller, GUI gui, Spiller[] spillerArray, SpillePlade spilleplade) throws IOException {
+        if (this.koebsTilstand && this.ejer.equals(spiller.getSpillerNavn())) {
+            gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerFelt"));
+        } else if (this.koebsTilstand && !this.ejer.equals(spiller.getSpillerNavn())) {
+            gui.showMessage(textController.getTekst("EjendomTekstLandetSpillerEjerIkkeFelt"));
+            spiller.spillerKonto.transaktion(-huslejeInt);
+            for (Spiller spillerSomEjerFelt : spillerArray) {
+                if (this.ejer.equals(spillerSomEjerFelt.getSpillerNavn())) {
+                    spillerSomEjerFelt.spillerKonto.transaktion(huslejeInt);
+                    gui.showMessage(spillerSomEjerFelt.getSpillerNavn() + textController.getTekst("duharfaaetpengeBesked") + " " + huslejeString + "M");
+                }
+            }
+        } else {
+            gui.showMessage(textController.getTekst("EjendomTekstIkkeEjetFelt"));
+            koebEjendom(spiller);
+        }
+    }
 
     @Override
     public void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) throws IOException {
@@ -86,5 +104,10 @@ public class Ejendom extends Felt{
     @Override
     public GUI_Field getFelt() {
         return ejendomsFelt;
+    }
+
+    @Override
+    public String getFeltType() {
+        return "EjendomsFelt";
     }
 }

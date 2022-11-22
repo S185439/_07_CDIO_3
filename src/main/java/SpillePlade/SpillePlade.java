@@ -1,7 +1,11 @@
+package SpillePlade;
 
+import Spiller.Spiller;
 import TextController.TextController;
 import gui_fields.*;
 import Felter.*;
+import gui_main.GUI;
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -33,6 +37,7 @@ public class SpillePlade {
      Start start = new Start();
      /** Opretter array med 24 felter til spillepladen */
      GUI_Field[] felter = new GUI_Field[24];
+     Felt[] felterTilFunktion = new Felt[24];
 
      public SpillePlade() throws IOException {
           felter[0] = start.getFelt();
@@ -59,18 +64,48 @@ public class SpillePlade {
           felter[21] = chanceFelt4.getFelt();
           felter[22] = vandlandet.getFelt();
           felter[23] = strandpromenaden.getFelt();
+
+          felterTilFunktion[0] = start;
+          felterTilFunktion[1] = burgerbaren;
+          felterTilFunktion[2] = pizzeriaet;
+          felterTilFunktion[3] = chanceFelt1;
+          felterTilFunktion[4] = slikbutikken;
+          felterTilFunktion[5] = iskiosken;
+          felterTilFunktion[6] = faengsel;
+          felterTilFunktion[7] = museet;
+          felterTilFunktion[8] = biblioteket;
+          felterTilFunktion[9] = chanceFelt2;
+          felterTilFunktion[10] = skateparken;
+          felterTilFunktion[11] = swimmingpoolen;
+          felterTilFunktion[12] = parkering;
+          felterTilFunktion[13] = spillehallen;
+          felterTilFunktion[14] = biografen;
+          felterTilFunktion[15] = chanceFelt3;
+          felterTilFunktion[16] = legetoejsbutikken;
+          felterTilFunktion[17] = dyrehandlen;
+          felterTilFunktion[18] = gaaIFaengsel;
+          felterTilFunktion[19] = bowlinghallen;
+          felterTilFunktion[20] = zoo;
+          felterTilFunktion[21] = chanceFelt4;
+          felterTilFunktion[22] = vandlandet;
+          felterTilFunktion[23] = strandpromenaden;
      }
 
 
      /**
       * Finder feltets placering og returner feltet der er på den placering
       */
-     public GUI_Field getFeltPlacering (int placering) {
-        return felter [placering - 1];
+     public Felt getFeltPlacering (int placering) {
+        return felterTilFunktion[placering];
      }
      public GUI_Field[] getFelter() {return felter;}
      public void setSpillerPaaFelt(GUI_Player spiller, int placering) {
           felter[placering].setCar(spiller, true);
+     }
+     public void rykSpillerTilFelt(Spiller spiller, int felterFrem) throws IOException {
+          felter[spiller.getPlacering()].setCar(spiller.getGUIspiller(), false);
+          spiller.rykSpiller(felterFrem);
+          felter[spiller.getPlacering()].setCar(spiller.getGUIspiller(),true);
      }
 }
 

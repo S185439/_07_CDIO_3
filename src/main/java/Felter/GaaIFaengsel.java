@@ -1,6 +1,7 @@
 package Felter;
 
 import Kortbunke.KortBunke;
+import SpillePlade.SpillePlade;
 import Spiller.Spiller;
 import gui_fields.GUI_Field;
 import Felter.GUI_Empty;
@@ -50,6 +51,11 @@ public class GaaIFaengsel extends Felt{
         gui.showMessage(this.feltBesked);
     }
 
+    @Override
+    public void landPaaFelt(Spiller spiller, GUI gui, Spiller[] spillerArray, SpillePlade spillePlade) throws IOException {
+
+    }
+
     /**
      *
      * @return et GUI_Empty objekt med de rette indtastninger
@@ -57,5 +63,10 @@ public class GaaIFaengsel extends Felt{
     @Override
     public GUI_Field getFelt() {
         return gaaIFaengselFelt;
+    }
+
+    @Override
+    public String getFeltType() {
+        return "GaaIFaengselFelt";
     }
 }

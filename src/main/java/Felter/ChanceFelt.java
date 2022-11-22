@@ -1,6 +1,7 @@
 package Felter;
 import Kortbunke.Kort;
 import Kortbunke.KortBunke;
+import SpillePlade.SpillePlade;
 import Spiller.Spiller;
 import gui_fields.GUI_Chance;
 import gui_fields.GUI_Field;
@@ -46,6 +47,11 @@ public class ChanceFelt extends Felt{
         kort.kortFunktion(spiller, gui);
     }
 
+    @Override
+    public void landPaaFelt(Spiller spiller, GUI gui, Spiller[] spillerArray, SpillePlade spillePlade) throws IOException {
+
+    }
+
     /**
      *
      * @return et GUI_Chance objekt med de rette indtastninger
@@ -53,5 +59,10 @@ public class ChanceFelt extends Felt{
     @Override
     public GUI_Field getFelt() {
         return chanceFelt;
+    }
+
+    @Override
+    public String getFeltType() {
+        return "ChancFelt";
     }
 }

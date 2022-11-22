@@ -207,4 +207,10 @@ Indtast spiller 3's navn, spiller 3 er grøn
 spillernavn4
 Indtast spiller 4's navn, spiller 4 er lilla
 startspilspillerindtast
-Hvor mange spillere er i? I skal være mellem 2 og 4 spillere
+Hvor mange spillere er i? I skal være mellem 2 og 4 spillere'
+spillerturtekst
+, det er din tur
+duharfaaetpengeBesked
+, du har modtaget
+overstart
+Du er passeret start og har derfor modtaget 2M

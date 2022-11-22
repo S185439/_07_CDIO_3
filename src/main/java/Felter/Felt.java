@@ -1,4 +1,5 @@
 package Felter;
+import SpillePlade.SpillePlade;
 import Spiller.Spiller;
 import Kortbunke.*;
 import TextController.TextController;
@@ -29,7 +30,10 @@ public abstract class Felt {
      *             da metoden showMessage bliver brugt i forbindelse med den
      */
     public abstract void landPaaFelt(Spiller spiller, KortBunke kortbunke, GUI gui) throws IOException;
+
+    public abstract void landPaaFelt(Spiller spiller, GUI gui, Spiller[] spillerArray, SpillePlade spillePlade) throws IOException;
     public abstract GUI_Field getFelt();
+    public abstract String getFeltType();
 
     public String getTitel() {
         return titel;

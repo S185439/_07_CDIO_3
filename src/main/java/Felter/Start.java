@@ -1,6 +1,7 @@
 package Felter;
 
 import Kortbunke.KortBunke;
+import SpillePlade.SpillePlade;
 import Spiller.Spiller;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Start;
@@ -34,7 +35,17 @@ public class Start extends Felt{
     }
 
     @Override
+    public void landPaaFelt(Spiller spiller, GUI gui, Spiller[] spillerArray, SpillePlade spillePlade) throws IOException {
+
+    }
+
+    @Override
     public GUI_Field getFelt() {
         return startFelt;
+    }
+
+    @Override
+    public String getFeltType() {
+        return "StartFelt";
     }
 }
