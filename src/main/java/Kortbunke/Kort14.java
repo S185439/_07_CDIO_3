@@ -18,4 +18,7 @@ public class Kort14 extends Kort{
         //loop der giver personen penge og tager det fra andre.
 
     };
+
+
+
 }

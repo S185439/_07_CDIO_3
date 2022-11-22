@@ -18,5 +18,6 @@ public class Kort12 extends Kort {
         //Sæt spiller med Katte-brik til en hvis tilstand der gør at de på næste tur rykker frem til et ejendomsfelt
         //af deres valg. Derudover skal der trækkes et kort mere
         //spiller.faaTypeKort();
+
     };
 }
