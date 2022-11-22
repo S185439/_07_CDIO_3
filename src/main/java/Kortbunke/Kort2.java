@@ -13,6 +13,7 @@ public class Kort2 extends Kort {
     }
 
     //rykker spilleren til start
+    @Override
     public void kortFunktion(Spiller spiller, GUI gui) {
         gui.displayChanceCard(kortTekst);
         spiller.setPlacering(0);
