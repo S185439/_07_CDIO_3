@@ -22,7 +22,7 @@ public class Spil {
         int hvisTur = 0;
 
         while(true) {
-            //opdattere begge spiller nuværende mængde penge i guien
+            //opdatere alle spilleres nuværende mængde penge i guien
             for (Spiller i : spillerArray) {
                 i.getGUIspiller().setBalance(i.spillerKonto.getPenge());
             }
@@ -50,7 +50,7 @@ public class Spil {
                 spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).landPaaFelt(spillerArray[hvisTur], gui);
             }
 
-            //opdattere begge spiller nuværende mængde penge i guien
+            //opdatere alle spilleres nuværende mængde penge i guien
             for (Spiller i : spillerArray) {
                 i.getGUIspiller().setBalance(i.spillerKonto.getPenge());
             }
