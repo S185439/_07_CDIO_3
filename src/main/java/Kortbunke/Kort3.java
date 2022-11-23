@@ -6,7 +6,6 @@ import gui_main.GUI;
 import java.io.IOException;
 
 public class Kort3 extends Kort {
-    String kortTekst, kortTekst1;
 
     public Kort3() throws IOException {
         super.kortTekst = textController.getTekst("KortTekst3");
@@ -14,7 +13,7 @@ public class Kort3 extends Kort {
     }
     @Override
     public void kortFunktion(Spiller spiller, GUI gui) {
-        String antalFelter = gui.getUserSelection(kortTekst1, "1","2","3","4","5");
+        String antalFelter = gui.getUserSelection(super.kortTekst1, "1","2","3","4","5");
         spiller.rykSpiller(Integer.parseInt(antalFelter));
     };
 }

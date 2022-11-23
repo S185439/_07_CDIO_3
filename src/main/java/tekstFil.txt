@@ -153,7 +153,7 @@ Spillehallen
 KortTekst19.5
 Biografen
 KortTekst20
-Vælg et lilla eller et gult felt. Hvis det ikke er eget får du det gratis, ellers skal du betale husleje
+Vælg et lilla eller et gult felt. Hvis det ikke er ejet får du det gratis, ellers skal du betale husleje
 KortTekst20.1
 Hvilket felt vil du rykke frem til?
 KortTekst20.2

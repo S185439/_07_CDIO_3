@@ -99,8 +99,10 @@ public class SpillePlade {
         return felterTilFunktion[placering];
      }
      public GUI_Field[] getFelter() {return felter;}
-     public void setSpillerPaaFelt(GUI_Player spiller, int placering) {
-          felter[placering].setCar(spiller, true);
+     public void setSpillerPaaFelt(Spiller spiller, int placering) {
+          felter[spiller.getPlacering()].setCar(spiller.getGUIspiller(), false);
+          spiller.setPlacering(placering);
+          felter[spiller.getPlacering()].setCar(spiller.getGUIspiller(),true);
      }
      public void rykSpillerTilFelt(Spiller spiller, int felterFrem) throws IOException {
           felter[spiller.getPlacering()].setCar(spiller.getGUIspiller(), false);

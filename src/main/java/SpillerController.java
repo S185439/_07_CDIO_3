@@ -25,8 +25,8 @@ public class SpillerController {
                 gui.addPlayer(spiller1.getGUIspiller());
                 gui.addPlayer(spiller2.getGUIspiller());
                 spillerArray = new Spiller[]{spiller1,spiller2};
-                spillePlade.setSpillerPaaFelt(spiller1.getGUIspiller(), 0);
-                spillePlade.setSpillerPaaFelt(spiller2.getGUIspiller(), 0);
+                spillePlade.setSpillerPaaFelt(spiller1, 0);
+                spillePlade.setSpillerPaaFelt(spiller2, 0);
             }
             case 3 -> {
 
@@ -40,9 +40,9 @@ public class SpillerController {
                 gui.addPlayer(spiller2.getGUIspiller());
                 gui.addPlayer(spiller3.getGUIspiller());
                 spillerArray = new Spiller[]{spiller1,spiller2,spiller3};
-                spillePlade.setSpillerPaaFelt(spiller1.getGUIspiller(), 0);
-                spillePlade.setSpillerPaaFelt(spiller2.getGUIspiller(), 0);
-                spillePlade.setSpillerPaaFelt(spiller3.getGUIspiller(), 0);
+                spillePlade.setSpillerPaaFelt(spiller1, 0);
+                spillePlade.setSpillerPaaFelt(spiller2, 0);
+                spillePlade.setSpillerPaaFelt(spiller3, 0);
             }
             case 4 -> {
 
@@ -59,10 +59,10 @@ public class SpillerController {
                 gui.addPlayer(spiller3.getGUIspiller());
                 gui.addPlayer(spiller4.getGUIspiller());
                 spillerArray = new Spiller[]{spiller1,spiller2,spiller3,spiller4};
-                spillePlade.setSpillerPaaFelt(spiller1.getGUIspiller(), 0);
-                spillePlade.setSpillerPaaFelt(spiller2.getGUIspiller(), 0);
-                spillePlade.setSpillerPaaFelt(spiller3.getGUIspiller(), 0);
-                spillePlade.setSpillerPaaFelt(spiller4.getGUIspiller(), 0);
+                spillePlade.setSpillerPaaFelt(spiller1, 0);
+                spillePlade.setSpillerPaaFelt(spiller2, 0);
+                spillePlade.setSpillerPaaFelt(spiller3, 0);
+                spillePlade.setSpillerPaaFelt(spiller4, 0);
             }
         }
     }

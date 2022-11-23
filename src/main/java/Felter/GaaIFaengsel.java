@@ -32,8 +32,8 @@ public class GaaIFaengsel extends Felt{
      */
     @Override
     public void landPaaFelt(Spiller spiller, GUI gui) {
-        spiller.setPlacering(6);
         spiller.brugUdAfFaengselKort();
+        spiller.spillerKonto.transaktion(-1);
         gui.showMessage(this.feltBesked);
     }
 

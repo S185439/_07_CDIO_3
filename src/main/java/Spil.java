@@ -27,6 +27,7 @@ public class Spil {
                 i.getGUIspiller().setBalance(i.spillerKonto.getPenge());
             }
             gui.showMessage(spillerArray[hvisTur].getSpillerNavn() + textController.getTekst("spillerturtekst"));
+
             int spillersForrigePlacering = spillerArray[hvisTur].getPlacering();
             //slår terning og rykker spiller til felt
             int terningSlag = raflebaeger.slaaAlleTerninger(gui);
@@ -42,6 +43,9 @@ public class Spil {
                 spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).landPaaFelt(spillerArray[hvisTur], gui, spillerArray, spillePlade);
             } else if (spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).getFeltType().equals("ChanceFelt")) {
                 spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).landPaaFelt(spillerArray[hvisTur], kortBunke, gui);
+            } else if (spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).getFeltType().equals("GaaIFaengselFelt")) {
+                spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).landPaaFelt(spillerArray[hvisTur], gui);
+                spillePlade.setSpillerPaaFelt(spillerArray[hvisTur], 6);
             } else {
                 spillePlade.getFeltPlacering(spillerArray[hvisTur].getPlacering()).landPaaFelt(spillerArray[hvisTur], gui);
             }

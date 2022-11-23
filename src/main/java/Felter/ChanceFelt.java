@@ -63,6 +63,6 @@ public class ChanceFelt extends Felt{
 
     @Override
     public String getFeltType() {
-        return "ChancFelt";
+        return "ChanceFelt";
     }
 }

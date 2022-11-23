@@ -6,7 +6,6 @@ import gui_main.GUI;
 import java.io.IOException;
 
 public class Kort4 extends Kort {
-    String kortTekst, kortTekst1,kortTekst2,kortTekst3;
 
     public Kort4() throws IOException {
         super.kortTekst = textController.getTekst("KortTekst4");
@@ -16,9 +15,9 @@ public class Kort4 extends Kort {
     }
     @Override
     public void kortFunktion(Spiller spiller, GUI gui) {
-        gui.displayChanceCard(kortTekst);
-        String valg = gui.getUserSelection(kortTekst1, kortTekst2,kortTekst3);
-        if (valg.equals(kortTekst2)) {
+        gui.displayChanceCard(super.kortTekst);
+        String valg = gui.getUserSelection(super.kortTekst1, super.kortTekst2, super.kortTekst3);
+        if (valg.equals(super.kortTekst2)) {
             spiller.setPlacering(10);
         } else {
             spiller.setPlacering(11);
