@@ -20,8 +20,9 @@ public class Spil {
         SpillerController spillerController = new SpillerController(gui.getUserInteger(textController.getTekst("startspilspillerindtast"),2,4),gui, spillePlade);
         Spiller[] spillerArray = spillerController.getSpillerArray();
         int hvisTur = 0;
+        boolean spilVundet = false;
 
-        while(true) {
+        while(!spilVundet) {
             //opdatere alle spilleres nuværende mængde penge i guien
             for (Spiller i : spillerArray) {
                 i.getGUIspiller().setBalance(i.spillerKonto.getPenge());
@@ -57,10 +58,13 @@ public class Spil {
 
 
 
-
-            hvisTur++;
-            if (hvisTur == spillerArray.length) {
-                hvisTur = 0;
+            if (spillerArray[hvisTur].spillerKonto.getPenge()>0) {
+                spilVundet = true;
+            } else {
+                hvisTur++;
+                if (hvisTur == spillerArray.length) {
+                    hvisTur = 0;
+                }
             }
         }
 

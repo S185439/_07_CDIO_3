@@ -53,7 +53,7 @@ Der er ikke nogen som ejer denne ejendom og du køber derfor ejendommen
 KortTekst1
 Giv dette kort til spiller 1 og tag et chancekort mere
 KortTekst1.1
-Du kan nu rykke til hvilken som helst ejendom og købe den
+Hvilken ikke-ejet ejendom vil du rykke til og købe?
 KortTekst2
 Ryk frem til start og få 2 M
 KortTekst3

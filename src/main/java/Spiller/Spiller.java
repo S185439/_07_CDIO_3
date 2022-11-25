@@ -1,9 +1,12 @@
 package Spiller;
 
+import Kortbunke.Kort1;
 import gui_fields.GUI_Car;
 import gui_fields.GUI_Player;
+import gui_main.GUI;
 
 import java.awt.*;
+import TextController.TextController;
 
 public class Spiller {
     //Kode taget fra CDIO2
@@ -15,8 +18,7 @@ public class Spiller {
     public int startPenge;
     private GUI_Car bil;
     private GUI_Player GUIspiller;
-    public boolean harTypeKort;
-
+    private TextController textController;
 
 
     //Constructor til Spiller
@@ -25,7 +27,6 @@ public class Spiller {
         startPenge = penge;
         spillerKonto = new Konto(startPenge);
         this.iFaengsel = false;
-        this.harTypeKort = false;
         this.placering = 0;
         this.udAfFaengselKort = 0;
         this.bil = new GUI_Car(farve, Color.BLACK, GUI_Car.Type.CAR, GUI_Car.Pattern.FILL);
@@ -37,16 +38,9 @@ public class Spiller {
     }
 
     public void brugUdAfFaengselKort() {
-        if (this.udAfFaengselKort >= 0) {
+        if (this.udAfFaengselKort > 0) {
             this.udAfFaengselKort -= 1;
-        }
-    }
-
-    public void faaTypeKort() { this.harTypeKort = true; }
-
-    public void brugTypeKort() {
-        if (this.harTypeKort) {
-            harTypeKort = false;
+            this.spillerKonto.transaktion(1);
         }
     }
 
